@@ -1,0 +1,338 @@
+html {
+     box-sizing: border-box;
+     font-size: 16px;
+     font-family: "Montserrat", sans-serif;
+     color: var(--black);
+     scroll-behavior: smooth;
+ }
+
+ *,
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-family: "Rubik", sans-serif;
+ }
+
+ body,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ ol,
+ ul {
+     margin: 0;
+     padding: 0;
+ }
+
+ ol,
+ ul {
+     list-style: none;
+ }
+
+ img {
+     max-width: 100%;
+     height: auto;
+ }
+
+ input,
+ button,
+ textarea,
+ select {
+     font: inherit;
+ }
+/* CSS Reset End  */
+
+:root {
+    --brand: #db0e49;
+    --space-small:8px;
+    --space-medium:16px;
+    --space-large:32px;
+    --space-xl:64px;
+    --action: #085e6f;
+    --white: #ffffff;
+    --base-light: #0b7d8e;
+    --base-dark: #0d0711;
+    --black: #111111;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+/* Header navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: var(--base-light);
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar li a:hover {
+    background-color: var(--brand);
+    color: white;
+}
+
+/* First Hero section */
+
+.first-hero {
+  background: var(--brand);
+  margin-bottom: 50px;;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+.first-hero h5 {
+  display: inline-block;  
+  font-size: 48px;
+  background-color: var(--base-light);
+  color: var(--brand);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.first-hero p {
+  font-size: 16px;
+  display: inline-block; 
+  background-color: var(--base-light);
+  color: var(--brand);
+  line-height: 1.6;
+}
+
+/* Second hero 4 image */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.sunset{
+  background-color: var(--base-light);
+  text-align: center;
+  flex: 1;
+  border-radius: 8px;
+  cursor:pointer
+
+}
+
+.sunset h6{
+  margin:20px;
+  background-color: var(--base-light);
+  text-align:left;
+
+}
+.sunset img {
+    flex: 1;
+    height: 300px;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .sunset img {
+        flex: 1;
+        min-width: 150px;
+        height: 150px;
+        background-color: var(--action);
+        text-align: center;
+        line-height: 150px;
+        border-radius: 8px;
+    }
+}
+
+article {
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f7d4ff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+article h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4a00e0; /* matches your brand colors */
+}
+
+article p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.aboutme { 
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--brand);
+    display: block;
+    margin: 20px auto;  
+    box-shadow: 0 4px 8px rgba(197, 25, 25, 0.695);
+    transition: transform 5s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.aboutme:hover {
+    transform: rotate(360deg) scale(1.1);
+    box-shadow: 0 0 15px 5px rgba(74, 0, 224, 0.7);
+    border-color: var(--brand);
+}
+/*  product page*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.product{
+  background-color: var(--base-dark);
+  text-align: center;
+  flex: 1;
+  border-radius: 8px;
+  cursor:pointer;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.product img {
+   width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+
+}
+
+
+.product h5{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+  color: var(--base-light);
+  background: var(--brand);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+
+}
+.product img:hover {
+    transform: scale(1.1);
+
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.footer img {
+    width: 100px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+footer a {
+    color: var(--brand);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* contact us form */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+form label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 12px 16px;
+    margin-bottom: 25px;
+    border: 2px solid var(--base-light);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: var(--brand);
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: var(--brand);
+    color: var(--base-light);
+    padding: 14px 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--brand);
+}

@@ -34,5 +34,6 @@
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 
 ####  image_title_goes_here 
-![How Navigation looks like on mobile ](images/mobile version.png)
-![How Navigation looks like on desktop ](images/desktop version.png)
+![How Navigation looks like on mobile ](images/mobile_version.png)
+![How Navigation looks like on desktop ](images/desktop_version.png)
+

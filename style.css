@@ -302,7 +302,7 @@ article p {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 390px) {
   .product h5 {
     font-size: 0.8rem;
     padding: 3px 6px;
@@ -387,22 +387,6 @@ form button[type="submit"]:hover {
 }
 
 
-
-/* countdown */
-
-#countdown {
-  text-align: center;
-  margin: 30px 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#timer {
-  font-size: 1.5rem;
-  color: var(--brand);
-  font-weight: bold;
-}
-
-
 /* hamburger menu */
 
 .hamburger {
@@ -421,24 +405,11 @@ form button[type="submit"]:hover {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
   .hamburger {
     display: block;
   }
-.nav-links {
-    position: absolute;
-    top: 60px; /* adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-    background-color: white; /* optional */
-    padding: 1em;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-  }
+
 
 .nav-links.hidden {
     display: none;

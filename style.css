@@ -405,7 +405,7 @@ form button[type="submit"]:hover {
   transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 700px) {
   .hamburger {
     display: block;
   }

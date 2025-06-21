@@ -34,4 +34,5 @@
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 
 ####  image_title_goes_here 
-![Put a description of your image here](./relative_path_to_file)
+![How Navigation looks like on mobile ](images/mobile version.png)
+![How Navigation looks like on desktop ](images/desktop version.png)

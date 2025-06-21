@@ -62,19 +62,27 @@ html {
     --action: #085e6f;
     --white: #ffffff;
     --base-light: #0b7d8e;
+    --base-light-20: rgba(11, 125, 142, 0.471);
     --base-dark: #0d0711;
     --black: #111111;
+    --fill: #a972cb;
+    --pulse: #ef6eae;
+    --close: #ff7f82;
+    --raise: #ffa260; 
+    --up: #e4cb58; 
+    --slide: #a972cb; 
+    --offset: #ef6eae;
 }
 
 .logo {
     display: flex;
     justify-content: center;
-    margin: 10px;
 }
 
 .logo img {
-    width: 100px;
-    height: auto;
+    width: 175px;
+    max-height: 50px;
+    object-fit:contain;
 }
 
 
@@ -90,10 +98,10 @@ ul {
 
 .navbar li a {
     text-decoration: none;
-    color: var(--base-light);
+    color: var(--base-dark);
     font-size: 1.3rem;
     padding: 10px 15px;
-    border-radius: 8px;
+    border-radius: var(--space-small);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .navbar li a:hover {
@@ -104,36 +112,50 @@ ul {
 /* First Hero section */
 
 .first-hero {
-  background: var(--brand);
+  margin-top: 10px;
   margin-bottom: 50px;;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 200px;
   text-align: center;
-  background-image: url(images/hero.jpg);
+  background-image: url(images/sunset-1.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 20% 70%;
   background-repeat: no-repeat;  
 }
 
-.first-hero h5 {
-  display: inline-block;  
-  font-size: 48px;
-  background-color: var(--base-light);
-  color: var(--brand);
-  margin-bottom: 20px;
-  font-weight: 600;
+.first-hero h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .first-hero p {
   font-size: 16px;
-  display: inline-block; 
-  background-color: var(--base-light);
-  color: var(--brand);
+  display: flex; 
+  justify-content: center;
+  color: var(--base-dark);
   line-height: 1.6;
+  margin-bottom: 40px;
+
 }
 
 /* Second hero 4 image */
+.skills{
+    display: flex;
+    justify-content: center;
+    color: var(--base-dark);
+    margin: 20px;
+    font-size: 30px;
+}
+
+.skills:hover{
+    display: flex;
+    justify-content: center;
+    color: var(--brand);
+    margin: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
 .hero {
     display: flex;
     justify-content: space-between;
@@ -141,42 +163,47 @@ ul {
     flex-wrap: wrap;
 }
 .sunset{
-  background-color: var(--base-light);
+  background-color: var(--base-light-20);
+  margin: 15px;
   text-align: center;
   flex: 1;
   border-radius: 8px;
   cursor:pointer
 
 }
+.sunset h5{
+  margin:20px;
+  text-align:center;
+  border-radius: 20px;
+}
 
 .sunset h6{
   margin:20px;
-  background-color: var(--base-light);
   text-align:left;
-
+  border-radius: 20px;
 }
 .sunset img {
     flex: 1;
+    padding: 30px;
     height: 300px;
-    border-radius: 8px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
     .sunset img {
         flex: 1;
         min-width: 150px;
         height: 150px;
-        background-color: var(--action);
         text-align: center;
         line-height: 150px;
         border-radius: 8px;
     }
 }
 
+/* about me */
 article {
     margin: 40px auto;
     padding: 30px;
-    background-color: #f7d4ff;
+    background-color: var(--base-light);
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', sans-serif;
@@ -188,7 +215,7 @@ article h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
-    color: #4a00e0; /* matches your brand colors */
+    color: var(--brand); /* matches your brand colors */
 }
 
 article p {
@@ -205,19 +232,20 @@ article p {
     border: 3px solid var(--brand);
     display: block;
     margin: 20px auto;  
-    box-shadow: 0 4px 8px rgba(197, 25, 25, 0.695);
+    box-shadow: 0 4px 8px var(--base-dark);
     transition: transform 5s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 .aboutme:hover {
     transform: rotate(360deg) scale(1.1);
-    box-shadow: 0 0 15px 5px rgba(74, 0, 224, 0.7);
+    box-shadow: 0 0 15px 5px var(--brand);
     border-color: var(--brand);
 }
 /*  product page*/
 
 .container {
     display: flex;
+    margin: 20px;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
@@ -230,7 +258,7 @@ article p {
   cursor:pointer;
   position: relative;
   overflow: hidden;
-
+  max-width: 300px;;
 }
 
 .product img {
@@ -238,16 +266,14 @@ article p {
   height: auto;
   display: block;
   transition: transform 0.3s ease;
+  object-fit: cover;
 
 }
-
-
 .product h5{
   position: absolute;
   bottom: 10px;
   left: 10px;
   margin: 0;
-  color: var(--base-light);
   background: var(--brand);
   padding: 5px 10px;
   border-radius: 5px;
@@ -258,13 +284,36 @@ article p {
     transform: scale(1.1);
 
 }
+@media (max-width: 600px) {
+  .container {
+    justify-content: center;
+  }
 
+  .product {
+    flex: 1 1 90%;
+    max-width: 100%;
+  }
+
+  .product h5 {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    bottom: 5px;
+    left: 5px;
+  }
+}
+
+@media (max-width: 350px) {
+  .product h5 {
+    font-size: 0.8rem;
+    padding: 3px 6px;
+  }
+}
 /* footer */
 
 .footer {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 20px;
 }
 .footer img {
     width: 100px;
@@ -321,7 +370,7 @@ form textarea {
     resize: vertical;
 }
 
-form input[type="submit"] {
+form button[type="submit"] {
     background-color: var(--brand);
     color: var(--base-light);
     padding: 14px 0;
@@ -333,6 +382,110 @@ form input[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-form input[type="submit"]:hover {
+form button[type="submit"]:hover {
     background-color: var(--brand);
 }
+
+
+
+/* countdown */
+
+#countdown {
+  text-align: center;
+  margin: 30px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#timer {
+  font-size: 1.5rem;
+  color: var(--brand);
+  font-weight: bold;
+}
+
+
+/* hamburger menu */
+
+.hamburger {
+  display: none; 
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  width: 30px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+.nav-links {
+    position: absolute;
+    top: 60px; /* adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background-color: white; /* optional */
+    padding: 1em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+.nav-links.hidden {
+    display: none;
+  }
+}
+/* hamburger menu mobile */
+
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links ul {
+    margin: 5px 0;
+  }
+
+}
+
+
+
+/* PROJECT FILE CSS CODES */
+
+.project{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    justify-content: center;
+}
+.hero-1{
+    margin: 20px;
+    font-size: 100px;
+    text-align: center;
+}
+
+

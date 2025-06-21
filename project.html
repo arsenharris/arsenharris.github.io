@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- search for this-->
+        <meta name="viewport" content="width, initial-scale=1.0"> <!-- search for this-->
+        <title> Welcome to my first website </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+
+        <header>
+            <div class="logo"> 
+                <a href="index.html"> 
+                <img src="images/arsen.png" alt=" LearnyTrip logo like a paper fan with gradient colour from purple to blue" class="logo" >
+                </a>
+            </div>
+        </header>
+
+    <nav class="navbar"> 
+        <div class="hamburger" id="hamburger">
+            <img src="images/hamburger.svg" alt="Menu" class="hamburger-icon">
+        </div>
+        <div class="nav-links">  
+        <ul><li> <a href="#about"> About me  </a> </li></ul>
+        <ul><li> <a href="#project"> Projects </a> </li></ul>      
+        <ul><li> <a href="contact.html"> Contact  </a>  </li></ul>
+        </div>
+    </nav>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+    </script>
+
+
+
+
+<main>
+<section>
+    <div class="project">
+        <h1> PROJECTS</h1>
+    </div>
+</section>
+
+<div class="hero-1">
+        <h3 class="title"> COMING SOON</h3> 
+</div>
+
+
+
+
+</main>
+
+    </body>
+
+
+
+
+
+
+    <footer>
+    <nav class="footer"> 
+        <a href="https://alinkedin.com/arsenilhan" target="_blank" rel="noopener noreferrer"> <img src="images/linkedin.jpeg" alt=" Linkedin"> 
+    </a> 
+    </nav>
+</footer>
+</html>

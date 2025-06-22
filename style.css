@@ -532,3 +532,336 @@ form button[type="submit"]:hover {
     padding: 0.8rem 1rem;
   }
 }
+
+
+
+/* project page styling  */
+
+
+/* scale  */
+.scale {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  background-color:blanchedalmond;
+}
+.scale div {
+  width: 100px;
+  height: 100px;
+  background-color:#ef6eae;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.scale h2 {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+.scale1:hover{
+  transform: scale(0.1);
+}
+
+.scale2:hover{
+  transform: scale(0.5);
+}
+.scale3:hover{
+  transform: scale(0.75);
+}
+
+.scale4:hover{
+  transform: scale(0.90);
+}
+.scale5:hover{
+  transform: scale(110%);
+}
+
+.scale6:hover{
+  transform: scale(1.1, 0.5);
+}
+.scale7:hover{
+  transform: scaleX(0.7);
+}
+
+.scale8:hover{
+  transform: scaleX(90%);
+}
+
+.scale9:hover{
+  transform: scaleX(1.1);
+}
+
+.scale10:hover{
+  transform: scaleY(0.5);
+}
+.scale11:hover{
+  transform: scaleY(70%);
+}
+
+.scale12:hover{
+  transform: scaleY(1.1);
+}
+
+
+/* end scale */
+
+/* rotate */
+.rotate {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  background-color:blanchedalmond;
+}
+.rotate div {
+  width: 100px;
+  height: 100px;
+  background-color:#ff7f82;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.rotate h2 {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+
+.rotate1:hover{
+  transform: rotate(25deg);
+}
+
+.rotate2:hover{
+  transform: rotate(45deg);
+}
+.rotate3:hover{
+  transform: rotate(-45deg);
+}
+
+.rotate4:hover{
+  transform:rotate3d(1, 2, 1, 45deg);
+}
+.rotate5:hover{
+  transform:rotate3d(0, 1, 1, 60deg);
+}
+
+.rotate6:hover{
+  transform: rotate3d(1, 0, 1, -45deg);
+}
+.rotate7:hover{
+  transform:rotateX(40deg)
+}
+
+.rotate8:hover{
+  transform: rotateX(60deg);
+}
+
+.rotate9:hover{
+  transform: rotateX(80deg);
+}
+
+.rotate10:hover{
+  transform:rotateY(40deg);
+}
+.rotate11:hover{
+  transform:rotateY(60deg);
+}
+
+.rotate12:hover{
+  transform:rotateY(80deg);
+}
+
+.rotate13:hover{
+  transform:rotateZ(40deg);
+}
+.rotate14:hover{
+  transform:rotateZ(60deg);
+}
+
+.rotate15:hover{
+  transform:rotateZ(80deg);
+}
+/* rotate end */
+
+/* skew start */
+.skew {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  background-color:blanchedalmond;
+}
+.skew div {
+  width: 100px;
+  height: 100px;
+  background-color:#e4cb58;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.skew h2 {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+
+.skew1:hover{
+  transform: skew(15deg);
+}
+
+.skew2:hover{
+  transform: skew(15deg, 15deg);
+}
+.skew3:hover{
+  transform: skew(-15deg);
+}
+
+.skew4:hover{
+  transform:skewX(15deg)
+}
+.skew5:hover{
+  transform:skewX(30deg);
+}
+
+.skew6:hover{
+  transform:skewX(-25deg);
+}
+.skew7:hover{
+  transform:skewY(15deg);
+}
+
+.skew8:hover{
+  transform:skewY(30deg);
+}
+
+.skew9:hover{
+  transform:skewY(-25deg);
+}
+
+/* skew end */
+
+/* translate starts */
+.translate {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  background-color:blanchedalmond;
+}
+.translate div {
+  width: 100px;
+  height: 100px;
+  background-color:#db0e49;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.translate h2 {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+
+.translate1:hover{
+  transform:translate(50px)
+}
+
+.translate2:hover{
+  transform: translate(50px, 20px);
+}
+.translate3:hover{
+  transform: translate(-100px, 30px);
+}
+.translate4:hover{
+  transform:translateX(50px)
+}
+
+.translate5:hover{
+  transform: translateX(100px);
+}
+.translate6:hover{
+  transform: translateX(-10px);
+}
+.translate7:hover{
+  transform:translateY(40px)
+}
+
+.translate8:hover{
+  transform: translateY(50px);
+}
+.translate9:hover{
+  transform: translateY(-10px);
+}
+/* translate ends */
+
+
+/* matrix starts */
+
+/*  matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+.matrix {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  background-color:blanchedalmond;
+}
+.matrix div {
+  width: 100px;
+  height: 100px;
+  background-color:#a972cb;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.matrix h2 {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+.matrix1:hover{
+  transform:translate(50px)
+}
+
+.matrix2:hover{
+  transform: translate(50px, 20px);
+}
+.matrix3:hover{
+  transform: matrix(1, -0.3, 0, 1, 0, 50);
+}
+.matrix4:hover{
+  transform:   matrix3d(1, 0, 0, 0, 0, 1, 6, 0, 0, 0, 1, 0, 50, 100, 0, 1.1);
+
+}
+/* matrix ends */
